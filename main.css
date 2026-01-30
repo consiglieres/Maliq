@@ -1,0 +1,361 @@
+@font-face {
+	font-family: "Bernier Distressed";
+	src: url("./assets/BERNIERDISTRESSED-REGULAR.OTF") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap; /* Для оптимизации загрузки */
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+	outline: none;
+	color: inherit;
+}
+
+p,
+span {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 100px;
+}
+h2 {
+	font-size: 80px;
+}
+h4 {
+	font-size: 40px;
+}
+
+footer {
+	margin: 100px 0 400px 0;
+	gap: 10px;
+
+	.email-link {
+		color: black;
+	}
+}
+
+.title-color {
+	color: orange;
+}
+
+.title {
+	font-family: "Bernier Distressed", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.block_card {
+	display: flex;
+	justify-content: center;
+	height: 120px;
+	position: relative;
+	bottom: -3vh;
+
+	.card {
+		display: flex;
+		justify-content: center;
+		width: 230px;
+		background-image: url(/assets/d.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: 0 1vw 0 1vw;
+		border: 5px solid orange;
+		align-items: center;
+		text-align: center;
+		border-radius: 0;
+	}
+}
+
+.button-link {
+	padding: 20px 80px;
+	border-radius: 5px;
+	color: white;
+	background: linear-gradient(to bottom, #ff8c42, #ff6b35);
+}
+
+.block-about {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	gap: 100px;
+}
+
+.list-information {
+	gap: 10px;
+	margin-bottom: 100px !important;
+	margin-top: 50px !important;
+}
+
+.text-content {
+	padding: 60px 10px 60px 60px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	gap: 30px;
+	border: 5px solid orange;
+	border-right: none;
+}
+
+.description {
+	max-width: 450px;
+}
+
+.image-content {
+	border: 5px solid orange;
+}
+
+.list-material {
+	margin-bottom: 30px;
+	gap: 60px;
+}
+
+.paper-information {
+	max-width: 200px;
+	text-align: center;
+}
+
+.material-block {
+	gap: 10px;
+}
+
+.material-name {
+	color: rgb(80, 121, 255);
+	font-size: 20px;
+}
+
+.line {
+	border-bottom: 5px solid orange;
+	width: 1000px;
+}
+
+/* Third block */
+.sign-up-course {
+	padding: 60px 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.list-card {
+	gap: 30px;
+	align-content: center;
+	flex-wrap: wrap;
+	padding-bottom: 150px;
+}
+
+.card-price {
+	width: 320px;
+	background: white;
+	border-radius: 0;
+}
+
+.header-card-price {
+	background-color: #007bff;
+	color: white;
+	height: 70px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.card-body {
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.list-unstyled {
+	width: 100%;
+}
+
+.list-unstyled li {
+	margin-bottom: 12px;
+	font-size: 14px;
+	line-height: 1.4;
+	display: flex;
+	align-items: flex-start;
+}
+
+.orange-dot {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: #ff6b35;
+	border-radius: 50%;
+	margin-right: 10px;
+	margin-top: 5px;
+	flex-shrink: 0;
+}
+
+.button-list {
+	z-index: 1;
+	border: 1px solid blue;
+	color: blue;
+	border-radius: 50px;
+	background-color: rgb(0, 255, 255, 0.2);
+	padding: 5px 40px;
+	font-size: 18px;
+}
+.dropdown-wrapper {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.paint-menu {
+	position: absolute;
+	top: -20%;
+	left: 100%;
+	width: 470px;
+	transform: translateX(-50%);
+	display: none;
+	background: white;
+	border: 1px solid blue;
+	border-radius: 15px;
+	padding: 100px 20px 20px 20px;
+	z-index: 0;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.price-section {
+	text-align: center;
+}
+
+.old-price {
+	font-size: 24px;
+	margin-bottom: 5px;
+	color: #999;
+}
+
+.current-price {
+	font-size: 48px;
+	font-weight: bold;
+	margin: 0;
+	color: #333;
+}
+
+.currency-switch {
+	gap: 10px;
+	padding: 0;
+	background-color: transparent;
+	border-radius: 0;
+	width: auto;
+	align-items: flex-start;
+}
+
+.currency-btn {
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	background: #d35400;
+	color: white;
+	font-size: 25px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.currency-btn.active {
+	background-color: #e67e22;
+}
+
+.currency-btn:hover {
+	background-color: #e67e22;
+}
+
+.btn-participate {
+	background: linear-gradient(to bottom, #ff8c42, #ff6b35);
+	color: white;
+	border: none;
+	padding: 15px 40px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 100%;
+	max-width: 250px;
+	transition: background 0.2s ease;
+	margin-top: 20px;
+}
+
+.btn-participate:hover {
+	background: linear-gradient(to bottom, #ff7b32, #ff5a25);
+}
+
+/* Four block */
+.faq-card {
+	border: 4px solid orange;
+	border-radius: 0px;
+
+	overflow: hidden;
+	background: white;
+}
+
+/* Заголовок FAQ */
+.faq-header {
+	background: white;
+	border: none;
+	border-radius: 0;
+	text-align: left;
+}
+
+.faq-header:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+/* Заголовок вопроса */
+.faq-title {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #007bff; /* Синий для закрытых */
+	transition: color 0.3s ease;
+}
+
+/* Текст открытого вопроса */
+.faq-header[aria-expanded="true"] .faq-title {
+	color: orange !important;
+}
+
+/* Иконка переключения */
+.faq-toggle {
+	color: #007bff; /* Синяя по умолчанию */
+	font-size: 1.2rem;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	min-width: 20px;
+	text-align: center;
+}
+
+/* Иконка открытого состояния */
+.faq-header[aria-expanded="true"] .faq-toggle {
+	color: orange;
+	transform: rotate(180deg);
+}
+
+/* Тело FAQ */
+.faq-body {
+	padding: 0 2.5vh 1vh 2.5vh;
+	line-height: 1.6;
+	color: #333;
+	background: white;
+}
+
+@media (max-width: 1100px) {
+	.list-card {
+		flex-direction: column;
+		align-items: center;
+	}
+}
