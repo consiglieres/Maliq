@@ -64,7 +64,7 @@ footer {
 		display: flex;
 		justify-content: center;
 		width: 230px;
-		background-image: url(/assets/d.png);
+		background-image: url(assets/d.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
